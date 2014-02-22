@@ -1,0 +1,22 @@
+{{!< default}}
+
+<main class="content" role="main">
+  <article class="article {{post_class}}">
+    {{#post}}
+      <h1 class="article-title">{{{title}}}</h1>
+
+      <section class="article-content">
+        {{content}}
+      </section>
+
+      <div class="article-meta">
+        <time class="article-date" datetime="{{date format="YYYY-MM-DD"}}">
+          Published {{date format='DD MMMM, YYYY'}}
+        </time>
+        <div class="article-tags">
+          {{tags prefix="" separator=", "}}
+        </div>
+      </div>
+    {{/post}}
+  </article>
+</main>
