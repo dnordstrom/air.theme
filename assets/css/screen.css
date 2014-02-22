@@ -338,6 +338,10 @@ hr {
   text-align: center;
 }
 
+.page-number {
+  margin: 0 1em;
+}
+
 /**
  * Smooth link
  * A link with a transition
