@@ -13,8 +13,8 @@
  *
  * Miscelleneous
  * =============
- * Transition In  · all 0.15s ease 0s
- * Transition Out · all 0.25s ease 0.25s
+ * Transition In  · all .15s ease 0s
+ * Transition Out · all .25s ease .25s
  */
 
  @import 'fonts.css';
@@ -78,8 +78,8 @@ h6 {
   display: table;
   font-weight: 300;
   line-height: 1.25;
-  margin: 1.6em auto 0.8em;
-  padding: 0 0.5em 0.2em;
+  margin: 1.6em auto .8em;
+  padding: 0 .5em .2em;
   text-align: center;
 }
 
@@ -118,7 +118,7 @@ h6 {
 small,
 .small {
   font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: .9375rem;
 }
 
 pre,
@@ -126,11 +126,12 @@ code,
 kbd,
 samp,
 var {
-  font-size: 0.8em;
+  font-size: .8em;
 }
 
 blockquote {
-  font-size: 1.2em;
+  font-size: 23px;
+  font-size: 1.4375rem;
 }
 
 code,
@@ -147,13 +148,15 @@ kbd,
 samp,
 var {
   border: 1px solid rgb(221, 221, 221);
-  margin: 0 0.15em;
+  margin: 0 .15em;
   padding: 2px 5px 0px 5px;
   white-space: nowrap;
 }
 
 pre code {
   border: none;
+  font-size: 17px;
+  font-size: 1.0625rem;
   margin: 0;
   padding: 0;
 }
@@ -182,7 +185,7 @@ ul {
 }
 
 li {
-  margin-bottom: 0.35em;
+  margin-bottom: .35em;
   position: relative;
 }
 
@@ -190,7 +193,7 @@ ul li:before {
   content: "–";
   margin-right: 100%;
   position: absolute;
-  right: 0.9em;
+  right: .9em;
   top: 0;
 }
 
@@ -199,7 +202,7 @@ ul ol,
 ol ol,
 ol ul {
   margin-bottom: 0;
-  margin-top: 0.2em;
+  margin-top: .2em;
 }
 
 ul ul li:before {
@@ -216,15 +219,15 @@ pre,
 dd {
   border-left: 8px solid rgb(174, 224, 200);
   margin: 3em 5em 4em -28px;
-  padding: 0.25em 1.1em 0.2em 20px;
-  transition: all 0.25s ease 0.25s;
+  padding: .25em 1.1em .2em 20px;
+  transition: all .25s ease .25s;
 }
 
 blockquote:hover,
 pre:hover,
 dd:hover {
   border-color: rgb(129, 206, 167);
-  transition: all 0.15s ease 0s;
+  transition: all .15s ease 0s;
 }
 
 hr {
@@ -263,6 +266,10 @@ hr {
   font-size: 1.125rem;
   padding: 0;
   margin: 0;
+}
+
+.header-title {
+  font-weight: 400;
 }
 
 .header-link:hover {
@@ -305,7 +312,7 @@ hr {
 .article-meta {
   color: #bbb;
   font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: .9375rem;
   margin: 3em 0;
   text-align: center;
 }
@@ -317,7 +324,7 @@ hr {
 .pagination {
   color: #bbb;
   font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: .9375rem;
   margin: 8em 1em 0;
   text-align: center;
 }
@@ -330,11 +337,11 @@ hr {
 .smooth-link {
   color: #555;
   text-decoration: none;
-  transition: all 0.25s ease 0.25s;
+  transition: all .25s ease .25s;
 }
 
 .smooth-link:hover {
   color: rgb(129, 206, 167);
   text-decoration: none;
-  transition: all 0.15s ease 0s;
+  transition: all .15s ease 0s;
 }
