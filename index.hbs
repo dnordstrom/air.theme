@@ -1,28 +1,26 @@
 {{!< default}}
 
-<main class="content" role="main">
-  {{#foreach posts}}
+{{#foreach posts}}
 
-    <article class="article {{post_class}}">
-      <h1 class="article-title">
-        <a class="smooth-link" href="{{url}}">{{{title}}}</a>
-      </h1>
+  <article class="article {{post_class}}">
+    <h1 class="article-title">
+      <a class="smooth-link" href="{{url}}">{{{title}}}</a>
+    </h1>
 
-      <p class="article-excerpt">
-        {{excerpt}}&hellip;
-      </p>
+    <p class="article-excerpt">
+      {{excerpt}}&hellip;
+    </p>
 
-      <div class="article-meta">
-        <time class="article-date" datetime="{{date format="YYYY-MM-DD"}}">
-          Published {{date format='DD MMMM, YYYY'}}
-        </time>
-        <div class="article-tags">
-          {{tags prefix="" separator=", "}}
-        </div>
+    <footer class="article-meta">
+      <time class="article-date" datetime="{{date format="YYYY-MM-DD"}}">
+        Published {{date format='DD MMMM, YYYY'}}
+      </time>
+      <div class="article-tags">
+        {{tags prefix="" separator=", "}}
       </div>
-    </article>
+    </footer>
+  </article>
 
-  {{/foreach}}
+{{/foreach}}
 
-  {{pagination}}
-</main>
+{{pagination}}

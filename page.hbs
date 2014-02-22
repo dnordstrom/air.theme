@@ -1,13 +1,14 @@
 {{!< default}}
 
-<main class="content" role="main">
-  <article class="page {{post_class}}">
-    {{#post}}
-      <h1 class="page-title">{{{title}}}</h1>
+<article class="page {{post_class}}">
 
-      <section class="page-content">
-        {{content}}
-      </section>
-    {{/post}}
-  </article>
-</main>
+  {{#post}}
+
+    <h1 class="page-title">{{{title}}}</h1>
+    <section class="page-content">
+      {{content}}
+    </section>
+
+  {{/post}}
+
+</article>

@@ -14,6 +14,8 @@
  */
 
 ;(function (window, undefined) {
+  'use strict'
+
   /**
    * Uses functions from Eugene Kalinin's typogr.js to improve
    * typography. Repeated dashes are turned into en-dashes and em
@@ -262,35 +264,37 @@
           .replace('"', '&#8220;');
     };
 
-    return smartypants(content)
+    return smartypants(content);
   }
 
   /**
-   * Reverses email addresses in "mailtoreverse:" links, hopefully
+   * Reverses email addresses in "mailtor:" links, hopefully
    * preventing some spam. For example, instead of "mailto:me@me.com"
-   * you would use "mailtoreverse:moc.em@em".
+   * you would use "mailtor:moc.em@em" (note the "r").
    */
   function reverseMailtoAddresses() {
-    var links = document.querySelectorAll('a[href^="mailtoreverse:"]')
-    var index = links.length
+    if (document.querySelectorAll) {
+      var links = document.querySelectorAll('a[href^="mailtor:"]');
+      var index = links.length;
 
-    while (--index) {
-      links[i].setAttribute('href', 'mailto:' +
-        links[index].getAttribute('href').  // "mailto:moc.em@em"
-        split(':')[1].                      // "moc.em@em"
-        split('').reverse().join('')        // "me@me.com"
-      )
+      while (index--) {
+        links[index].setAttribute('href', 'mailto:' +
+          links[index].getAttribute('href').
+          split(':')[1].                      // "moc.em@em"
+          split('').reverse().join('')        // "me@me.com"
+        );
+      }
     }
   }
 
   function initialize() {
-    reverseMailtoAddresses()
-    document.body.innerHTML = typogrify(document.body.innerHTML)
+    reverseMailtoAddresses();
+    document.body.innerHTML = typogrify(document.body.innerHTML);
   }
 
   if (document.readyState === 'complete') {
-    initialize()
+    initialize();
   } else {
-    document.addEventListener('DOMContentLoaded', initialize, false)
+    document.addEventListener('DOMContentLoaded', initialize, false);
   }
-}(window))
+}(window));

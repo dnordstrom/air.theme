@@ -28,32 +28,12 @@
     {{ghost_head}}
 </head>
 <body class="{{body_class}}">
-  <header class="header">
-    <h1 class="header-title">
-      <a class="header-link smooth-link" href="/">{{@blog.title}}</a>
-    </h1>
+  {{> header}}
 
-    <a
-      class="header-link"
-      href="http://github.com/dnordstrom">GitHub</a>
-    <a
-      class="header-link"
-      href="http://twitter.com/mrnordstrom">Twitter</a>
-    <a
-      class="header-link"
-      href="http://facebook.com/dnordstrom">Facebook</a>
-    <a
-      class="header-link"
-      href="mailtoreverse:moc.mortsdronrm@d">Email</a>
+  <main class="content" role="main">
+    {{{body}}}
+  </main>
 
-    <div class="header-bio small">
-      <b>L. Daniel Nordstrom</b> builds mesmerizing technological castles. He is passionate about simplicity, communication, and security&mdash;an opinionated advocate of technological openness, transparency, privacy, and diplomacy, for a world where we make accurate and well-informed choices based on free knowledge, using free software.
-    </div>
-  </header>
-
-  {{{body}}}
-  {{ghost_foot}}
-
-  <script src="{{ asset "js/initialize.js" }}">
+  <script src="{{ asset "js/initialize.js" }}"></script>
 </body>
 </html>
