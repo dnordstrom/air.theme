@@ -328,6 +328,22 @@ hr {
 }
 
 /**
+ * Comments
+ */
+
+#article-comments {
+  opacity: 0.25;
+  padding: 6em 4em 0;
+  text-align: center;
+  transition: opacity 1.25s ease 7s;
+}
+
+#article-comments:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease 0s;
+}
+
+/**
  * Pagination
  */
 

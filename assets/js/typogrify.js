@@ -1,9 +1,5 @@
 /**
- * Uses functions from Eugene Kalinin's typogr.js to improve
- * typography. Repeated dashes are turned into en-dashes and em
- * dashes, straight quotes are turned into curly quotes, and so on.
- * Typogr.js is smart; it does not touch contents of tags such as
- * `<pre>` or `<code>`.
+ * Initialization script for the Air theme.
  *
  * @author  L. Daniel Nordstrom <d@mrnordstrom.com>
  * @license MPL 2.0
@@ -17,11 +13,24 @@
   'use strict'
 
   /**
+   * Performs the actual initialization when DOM is ready.
+   *
+   * @method
+   */
+  function initialize() {
+    document.body.innerHTML = typogrify(document.body.innerHTML);
+  }
+
+  /**
    * Uses functions from Eugene Kalinin's typogr.js to improve
    * typography. Repeated dashes are turned into en-dashes and em
    * dashes, straight quotes are turned into curly quotes, and so on.
    * Typogr.js is smart; it does not touch contents of tags such as
    * `<pre>` or `<code>`.
+   *
+   * @method
+   * @param {String} content Content to typographically enhance
+   * @returns {String} The resulting enhanced content
    */
   function typogrify(content) {
     var re_skip_tags =
@@ -265,31 +274,6 @@
     };
 
     return smartypants(content);
-  }
-
-  /**
-   * Reverses email addresses in "mailtor:" links, hopefully
-   * preventing some spam. For example, instead of "mailto:me@me.com"
-   * you would use "mailtor:moc.em@em" (note the "r").
-   */
-  function reverseMailtoAddresses() {
-    if (document.querySelectorAll) {
-      var links = document.querySelectorAll('a[href^="mailtor:"]');
-      var index = links.length;
-
-      while (index--) {
-        links[index].setAttribute('href', 'mailto:' +
-          links[index].getAttribute('href').
-          split(':')[1].                      // "moc.em@em"
-          split('').reverse().join('')        // "me@me.com"
-        );
-      }
-    }
-  }
-
-  function initialize() {
-    reverseMailtoAddresses();
-    document.body.innerHTML = typogrify(document.body.innerHTML);
   }
 
   if (document.readyState === 'complete') {
