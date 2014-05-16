@@ -76,6 +76,8 @@ img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 5px;
 }
 
 h1,
@@ -156,9 +158,13 @@ code,
 kbd,
 samp,
 var {
+  background: #F3F3F3;
+  border-radius: 3px;
   border: 1px solid rgb(221, 221, 221);
-  margin: 0 .15em;
-  padding: 2px 5px 0px 5px;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 0px 0px #FFF inset;
+  color: #333;
+  margin: 0px 0.15em;
+  padding: 5px 7px 2px;
   white-space: nowrap;
 }
 
