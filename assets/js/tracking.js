@@ -18,7 +18,7 @@
    * @method
    */
   function initialize() {
-    if (!mixpanel || navigator.doNotTrack) return
+    if (!mixpanel || navigator.doNotTrack === 'yes') return
 
     var path = location.pathname
     var titleNode = document.querySelector('.article-title')
