@@ -387,5 +387,5 @@ hr {
  */
 
 .twitter-tweet {
-  margin: 2em auto;
+  margin: 2em auto !important;
 }
