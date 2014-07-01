@@ -241,7 +241,7 @@ blockquote,
 pre,
 dd {
   border-left: 8px solid rgb(174, 224, 200);
-  margin: 3em 5em 4em -28px;
+  margin: 3em 1em 4em -28px;
   padding: .25em 1.1em .2em 20px;
   transition: all .25s ease .25s;
 }
