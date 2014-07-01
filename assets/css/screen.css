@@ -40,16 +40,16 @@ footer {
 
 body {
   color: #555;
-  font-family: "Fira Sans", "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 21px;
-  font-size: 1.3125rem;
+  font-family: "Source Sans Pro", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   -o-hyphens: auto;
   hyphens: auto;
-  line-height: 1.6;
+  line-height: 1.45;
   margin: 0;
   orphans: 4;
   padding: 0;
@@ -87,7 +87,7 @@ h4,
 h5,
 h6 {
   display: table;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 1.25;
   margin: 1.6em auto .8em;
   padding: 0 .5em .2em;
@@ -97,7 +97,7 @@ h6 {
 h1 {
   border-bottom: 1px solid rgb(221, 221, 221);
   font-size: 64px;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -150,7 +150,7 @@ pre,
 kbd,
 samp,
 var {
-  font-family: 'Fira Mono', monospace;
+  font-family: 'Source Code Pro', monospace;
   font-style: normal;
 }
 
@@ -333,6 +333,10 @@ hr {
   font-size: .9375rem;
   margin: 3em 0;
   text-align: center;
+}
+
+.article-content {
+  font-family: "Gandhi Serif", "Georgia", serif;
 }
 
 /**
