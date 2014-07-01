@@ -87,6 +87,7 @@ h4,
 h5,
 h6 {
   display: table;
+  font-family: "Source Sans Pro", "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 600;
   line-height: 1.25;
   margin: 1.6em auto .8em;
