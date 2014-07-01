@@ -100,6 +100,11 @@ h1 {
   font-size: 3rem;
 }
 
+.home-template h1 {
+  font-size: 2.6rem;
+  padding-bottom: 0.65em;
+}
+
 h2 {
   font-size: 46px;
   font-size: 2.875rem;
@@ -325,6 +330,10 @@ hr {
 
 .article {
   padding: 0 3em;
+}
+
+.article-excerpt {
+  text-align: center;
 }
 
 .article-meta {
