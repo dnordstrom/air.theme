@@ -389,6 +389,11 @@ hr {
   font-family: "Nimrod", "Georgia", serif;
 }
 
+.article-content a {
+  color: #111;
+  text-decoration: underline;
+}
+
 /**
  * Comments
  */
