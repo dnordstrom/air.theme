@@ -89,9 +89,7 @@ h6 {
   font-family: "Source Sans Pro", "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 600;
   line-height: 1.25;
-  margin: 1.6em auto .8em;
-  padding: 0 .65em .2em;
-  text-align: center;
+  margin: 1.6em auto 1em;
 }
 
 h1 {
@@ -99,11 +97,13 @@ h1 {
   display: table;
   font-size: 64px;
   font-size: 2.2rem;
+  padding-bottom: .65em;
   text-align: center;
 }
 
 .home-template h1 {
   font-size: 2rem;
+  text-align: center;
 }
 
 h2 {
@@ -149,8 +149,11 @@ var {
 }
 
 blockquote {
-  font-size: 23px;
-  font-size: 1.4375rem;
+  font-style: italic;
+}
+
+blockquote cite {
+  font-style: normal;
 }
 
 code,
@@ -243,9 +246,9 @@ dt {
 blockquote,
 pre,
 dd {
-  border-left: 8px solid rgb(174, 224, 200);
-  margin: 3em 1em 4em -28px;
-  padding: .25em 1.1em .2em 20px;
+  border-left: 6px solid rgb(174, 224, 200);
+  margin: 2em 1em 3em -26px;
+  padding: 0.22rem 1.1em 0.28rem 20px;
   transition: all .25s ease .25s;
 }
 
@@ -408,5 +411,5 @@ hr {
  */
 
 .twitter-tweet {
-  margin: 2em auto !important;
+  margin: 4rem auto !important;
 }
