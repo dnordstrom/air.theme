@@ -103,6 +103,7 @@ h1 {
 
 .home-template h1 {
   font-size: 2rem;
+  margin-bottom: 0.8em;
   text-align: center;
 }
 
@@ -349,10 +350,12 @@ hr {
   color: #bbb;
   font-size: 15px;
   font-size: .9375rem;
-  margin: 3em 0;
+  font-weight: 300;
+  margin: 2.8em 0px 5em;
   text-align: center;
 }
 
+.article-excerpt,
 .article-content {
   font-family: "Gandhi Serif", "Georgia", serif;
 }
