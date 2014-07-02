@@ -39,7 +39,7 @@ footer {
 }
 
 body {
-  color: #555;
+  color: #444;
   font-family: "Source Sans Pro", "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -86,50 +86,52 @@ h3,
 h4,
 h5,
 h6 {
-  display: table;
   font-family: "Source Sans Pro", "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 600;
   line-height: 1.25;
   margin: 1.6em auto .8em;
-  padding: 0 .5em .2em;
+  padding: 0 .65em .2em;
   text-align: center;
 }
 
 h1 {
   border-bottom: 1px solid rgb(221, 221, 221);
+  display: table;
   font-size: 64px;
-  font-size: 3rem;
+  font-size: 2.2rem;
+  text-align: center;
 }
 
 .home-template h1 {
-  font-size: 2.6rem;
-  padding-bottom: 0.65em;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 46px;
-  font-size: 2.875rem;
+  font-size: 22px;
+  font-size: 1.375rem;
 }
 
 h3 {
-  font-size: 36px;
-  font-size: 2.25rem;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 h4 {
-  font-size: 26px;
-  font-size: 1.625rem;
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 h5 {
-  font-size: 21px;
-  font-size: 1.3125rem;
-  font-weight: 600;
+  font-size: 16px;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
 }
 
 h6 {
-  font-size: 21px;
-  font-size: 1.3125rem;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 small,
@@ -335,6 +337,8 @@ hr {
 }
 
 .article-excerpt {
+  font-size: 15px;
+  font-size: .9375rem;
   text-align: center;
 }
 
