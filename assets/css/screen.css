@@ -340,6 +340,14 @@ hr {
   margin: 0 4px 0 10px;
 }
 
+.header-link.smooth-link {
+  color: #81CEA7;
+}
+
+.header-link.smooth-link:hover {
+  color: #444;
+}
+
 .header-bio {
   color: #bbb;
   margin: 1.5em auto;
