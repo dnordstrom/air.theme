@@ -388,12 +388,12 @@ hr {
   font-size: 15px;
   font-size: .9375rem;
   font-weight: 300;
-  margin: 2em 0 6em;
+  margin: 6em 0 2em;
   text-align: center;
 }
 
 .home-template .article-meta {
-  margin: 6em 0 2em;
+  margin: 2em 0 6em;
 }
 
 .article-excerpt,
