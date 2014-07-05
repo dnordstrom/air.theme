@@ -380,6 +380,10 @@ hr {
   text-align: center;
 }
 
+.home-template .article-meta {
+  margin: 6em 0 2em;
+}
+
 .article-excerpt,
 .article-content {
   font-family: "Nimrod", "Georgia", serif;
