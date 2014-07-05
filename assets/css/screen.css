@@ -132,7 +132,7 @@ h1 {
 
 .home-template h1 {
   font-size: 2rem;
-  margin-bottom: 0.85em;
+  margin-bottom: 0.75em;
   text-align: center;
 }
 
@@ -331,10 +331,6 @@ hr {
   font-weight: 400;
 }
 
-.header-link:hover {
-  text-decoration: none;
-}
-
 .header-link:not(:last-of-type):after,
 .header-title .header-link:after {
   color: #DDDDDD;
@@ -370,8 +366,8 @@ hr {
 }
 
 .article-excerpt {
-  font-size: 15px;
-  font-size: .9375rem;
+  font-size: 13px;
+  font-size: .8125rem;
   text-align: center;
 }
 
@@ -380,7 +376,7 @@ hr {
   font-size: 15px;
   font-size: .9375rem;
   font-weight: 300;
-  margin: 2.8em 0px 5em;
+  margin: 2em 0 6em;
   text-align: center;
 }
 
