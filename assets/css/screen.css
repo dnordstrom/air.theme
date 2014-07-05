@@ -331,6 +331,10 @@ hr {
   font-weight: 400;
 }
 
+.header-navigation {
+  display: inline;
+}
+
 .header-link:not(:last-of-type):after,
 .header-title .header-link:after {
   color: #DDDDDD;
@@ -340,11 +344,11 @@ hr {
   margin: 0 4px 0 10px;
 }
 
-.header-link.smooth-link {
+.header-navigation .smooth-link {
   color: #81CEA7;
 }
 
-.header-link.smooth-link:hover {
+.header-navigation .smooth-link:hover {
   color: #444;
 }
 
