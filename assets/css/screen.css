@@ -220,6 +220,7 @@ pre code {
 }
 
 pre {
+  background: #eee;
   overflow: auto;
 }
 
@@ -277,7 +278,8 @@ pre,
 dd {
   border-left: 6px solid rgb(174, 224, 200);
   margin: 2.8em 1em 3em -26px;
-  padding: 0.22rem 1.1em 0.28rem 20px;
+  /* padding: 0.22rem 1.1em 0.28rem 20px; */
+  padding: 0.52rem 1.1em 0.58rem 20px;
   transition: all .25s ease .25s;
 }
 
